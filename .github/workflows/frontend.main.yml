@@ -15,7 +15,7 @@ jobs:
     - uses: azure/login@v1
       with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-
+  # uploading a blob storage account for the frontend directory
     - name: Upload to blob storage
       uses: azure/CLI@v1
       with:
